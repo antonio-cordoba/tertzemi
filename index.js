@@ -1,5 +1,4 @@
 import "./mapbits.js";
-import "./style.css";
 
 var i1;
 var i3;
