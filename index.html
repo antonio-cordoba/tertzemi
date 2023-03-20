@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>tertzemi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link rel="stylesheet" href="./style.css"></link>
+        <script type="text/javascript" src="./mapbits.js"></script>
+        <script  type="text/javascript" src="./index.js"></script>
+</head>
+<body onload="setupElements()"> 
+    <textarea id="o1" readonly="readonly"></textarea>
+    <div class="container">
+        <span class="label">map</span>
+        <div class="row borderBar">
+            <i class="fa fa-key box-icon"></i>
+            <input id="i3" type="password" class="input-box"/>
+            <i id="ic2" class="fa fa-eye box-icon"></i>
+        </div>
+        <span class="label">hint</span>
+        <div class="row borderBar">
+            <i class="fa fa-font box-icon"></i>
+            <input id="i1" type="text"  class="input-box"/>
+        </div>
+        <span class="label">password</span>
+        <div class="row borderBar">
+            <i class="fa fa-random box-icon"></i>
+            <input id="o2" type="password"  class="input-box"/>
+            <i id="ic1" class="fa fa-eye box-icon"></i>
+        </div>
+        <div class="row">
+            <input id="go1" type="button" value="go" />
+            <input id="go2" type="button" value="clear" />
+        </div>
+    </div>
+</body>
+</html>
