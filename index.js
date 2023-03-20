@@ -11,7 +11,7 @@ var currentMap = undefined;
 
 if('serviceWorker' in navigator) {
     setupElements();        
-    navigator.serviceWorker.register('./sw.js', { scope: '/' });
+    navigator.serviceWorker.register('./sw.js', { scope: './' });
 }
 
 function setupElements() {
