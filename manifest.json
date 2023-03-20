@@ -11,7 +11,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "/ttz.png",
+            "src": "/icon512.png",
             "sizes": "512x512"
         }
     ]

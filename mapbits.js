@@ -1,6 +1,5 @@
-currentMap = undefined;
 
- mapbits = [
+ export var mapbits = [
   {
     "tag": "t-0217",
     "chips": [

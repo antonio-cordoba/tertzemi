@@ -1,4 +1,4 @@
-import "./mapbits.js";
+import { mapbits } from "./mapbits.js";
 
 var i1;
 var i3;
@@ -6,9 +6,10 @@ var o1;
 var o2;
 var mbs;
 var currentMbs;
+var currentMap = undefined;
+
 
 if('serviceWorker' in navigator) {
-    console.log('~~: oh!');
     setupElements();        
     navigator.serviceWorker.register('./sw.js', { scope: '/' });
 }
