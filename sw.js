@@ -5,11 +5,11 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '/',
-      '/index.js',
-      '/mapbit.js',
-      '/style.css',
-      "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+      './',
+      './index.js',
+      './mapbit.js',
+      './style.css',
+      "./*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
     ]);
   })());
 });
