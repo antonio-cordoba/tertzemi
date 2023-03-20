@@ -9,7 +9,8 @@ var mbs;
 var currentMbs;
 
 if('serviceWorker' in navigator) {
-    console.log('~~: oh!');        
+    console.log('~~: oh!');
+    setupElements();        
     navigator.serviceWorker.register('./sw.js', { scope: '/' });
 }
 
