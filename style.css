@@ -16,6 +16,7 @@
             background-color: white;
             align-self: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            align-self: center;
         }
 
         .row {
@@ -76,13 +77,6 @@
             margin: .5rem;
             padding: .5rem;
             outline: none;
-        }
-
-        #o1 {
-            position:absolute;
-            top: -100px;
-            padding: 4px;
-            border-style: none;
         }
 
         .label {

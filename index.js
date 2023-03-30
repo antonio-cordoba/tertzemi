@@ -2,7 +2,6 @@ import { mapbits } from "./mapbits.js";
 
 var i1;
 var i3;
-var o1;
 var o2;
 var mbs;
 var currentMbs;
@@ -17,7 +16,6 @@ if('serviceWorker' in navigator) {
 function setupElements() {
     i1 = e('i1');
     i3 = e('i3');
-    o1 = e('o1');
     o2 = e('o2');
     if (i1) {
         i1.oninput = clearout;
@@ -44,10 +42,9 @@ function changeIt(intext) {
 }
 
 function gotIt() {
-    o1.value = changeIt(i1.value);
-    o1.select();
-    document.execCommand('copy');
-    o2.value = o1.value;
+    const grab = changeIt(i1.value);
+    navigator.clipboard.writeText(grab)
+    .then(() => o2.value = grab);
 }
 
 function clearIt() {
@@ -56,7 +53,6 @@ function clearIt() {
 }
 
 function clearout() {
-    o1.value = '';
     o2.value = '';
     flipShow(o2, ic1, true);
     flipShow(i3, ic2, true);
